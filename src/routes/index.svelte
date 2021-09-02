@@ -18,17 +18,44 @@
 			names: ['Lebah Lebah Lebah', 'Buzz "Aldrin" Buzz'],
 			school: 'SMP Kalam Kudus Solo',
 			insignia: bee
+		},
+		{
+			code: 'MAT-283',
+			names: ['as0q2ksafajladf', 'adlkfjowqq n welkqw efi'],
+			school: 'weirqnr230',
+			insignia: bee
+		},
+		{
+			code: 'MAT-280',
+			names: ['AE803242434 eafdals', 'asd023 lewaofadsf'],
+			school: 'weirqnr230',
+			insignia: bee
 		}
 	];
 
+	const winners = [participants[0], participants[2]];
+	let shownWinners = [];
+
 	let shown = _.head(participants);
+	let halted = false;
 	onMount(() => {
 		const interval = setInterval(() => {
+			if (halted) return;
 			let next = _.sample(participants);
-			while (next == shown) next = _.sample(participants);
+			while (next == shown || shownWinners.includes(next)) {
+				next = _.sample(participants);
+			}
 			shown = next;
 		}, 1000);
 	});
+
+	const magic = () => {
+		if (halted && shownWinners.length == winners.length) return;
+		if (halted) return (halted = false);
+		halted = true;
+		shown = winners[shownWinners.length];
+		shownWinners = [shown, ...shownWinners];
+	};
 </script>
 
 <svelte:head>
@@ -38,8 +65,8 @@
 <div class="flex flex-col h-full">
 	<IndexHero />
 	<div class="mt-8 flex-grow">
-		<div class="container mx-auto">
-			<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+		<div class="container mx-auto h-full">
+			<div class="flex flex-col h-full p-12 max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
 				<div class="flex space-x-16">
 					{#key shown}
 						<div in:fly={{ y: 50, duration: 500 }} class="bg-white rounded-lg shadow-lg p-4 z-10">
@@ -62,7 +89,9 @@
 										{shown.names[1]}
 									</div>
 								{/if}
-								<div class="text-gray-500 text-3xl italic font-montserrat break-words">MAT-069</div>
+								<div class="text-gray-500 text-3xl italic font-montserrat break-words">
+									{shown.code}
+								</div>
 							</div>
 						{/key}
 						<div class="flex-grow" />
@@ -75,28 +104,19 @@
 						{/key}
 					</div>
 				</div>
-				<div class="mt-8 max-w-2xl mx-auto bg-coral-light rounded shadow p-4">
+				<div class="mt-8 w-full flex-grow max-w-2xl mx-auto p-4">
 					<ul class="font-barlow-semi text-gray-700 text-xl space-y-1">
-						<li>
-							MAT-001 &nbsp;&nbsp;|&nbsp;&nbsp; Otto Alexander Sutianto - William Leonard Sumendap
-						</li>
-						<li>
-							MAT-001 &nbsp;&nbsp;|&nbsp;&nbsp; Otto Alexander Sutianto - William Leonard Sumendap
-						</li>
-						<li>
-							MAT-001 &nbsp;&nbsp;|&nbsp;&nbsp; Otto Alexander Sutianto - William Leonard Sumendap
-						</li>
-						<li>
-							MAT-001 &nbsp;&nbsp;|&nbsp;&nbsp; Otto Alexander Sutianto - William Leonard Sumendap
-						</li>
-						<li>
-							MAT-001 &nbsp;&nbsp;|&nbsp;&nbsp; Otto Alexander Sutianto - William Leonard Sumendap
-						</li>
-						<li>
-							MAT-001 &nbsp;&nbsp;|&nbsp;&nbsp; Otto Alexander Sutianto - William Leonard Sumendap
-						</li>
+						{#each shownWinners as t}
+							<li class="text-center">
+								{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(' - ')}
+							</li>
+						{/each}
 					</ul>
 				</div>
+				<button
+					on:click={() => magic()}
+					class="block w-full mt-4 h-2 max-w-2xl mx-auto bg-lavender rounded shadow p-4"
+				/>
 			</div>
 		</div>
 	</div>
