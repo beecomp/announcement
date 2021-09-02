@@ -22,7 +22,7 @@
 		{
 			code: 'MAT-283',
 			names: ['as0q2ksafajladf', 'adlkfjowqq n welkqw efi'],
-			school: 'weirqnr230',
+			school: 'SMPK PENABUR Gading Serpong',
 			insignia: bee
 		},
 		{
