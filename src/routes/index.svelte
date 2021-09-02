@@ -27,7 +27,7 @@
 			let next = _.sample(participants);
 			while (next == shown) next = _.sample(participants);
 			shown = next;
-		}, 750);
+		}, 1000);
 	});
 </script>
 
@@ -41,20 +41,19 @@
 		<div class="container mx-auto">
 			<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
 				<div class="flex space-x-16">
-					<div class="bg-white rounded-lg shadow-lg p-4">
-						{#key shown}
+					{#key shown}
+						<div in:fly={{ y: 50, duration: 500 }} class="bg-white rounded-lg shadow-lg p-4 z-10">
 							<img
-								in:fly={{ y: 25, duration: 250 }}
 								class="h-[20rem] min-h-[20rem] w-[20rem] min-w-[20rem] object-contain"
 								src={shown.insignia}
 								alt="school logo"
 							/>
-						{/key}
-					</div>
+						</div>
+					{/key}
 
 					<div class="flex flex-col">
 						{#key shown}
-							<div in:fly={{ y: 100, duration: 250 }}>
+							<div in:fly={{ delay: 100, y: 100, duration: 500 }}>
 								<div class="text-gray-700 text-5xl font-montserrat break-words">
 									{shown.names[0]}
 								</div>
@@ -68,7 +67,7 @@
 						{/key}
 						<div class="flex-grow" />
 						{#key shown}
-							<div in:fly={{ y: 35, duration: 250 }}>
+							<div in:fly={{ y: 35, duration: 500 }}>
 								<div class="text-gray-700 text-4xl font-montserrat break-words">
 									SMP Kalam Kudus Solo
 								</div>
