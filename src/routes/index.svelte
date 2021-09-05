@@ -21,7 +21,7 @@
 		},
 		{
 			code: 'MAT-283',
-			names: ['as0q2ksafajladf', 'adlkfjowqq n welkqw efi'],
+			names: ['tayo', 'adlkfjowqq n welkqw efi'],
 			school: 'SMPK PENABUR Gading Serpong',
 			insignia: bee
 		},
