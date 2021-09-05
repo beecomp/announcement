@@ -5,13 +5,14 @@
 
 	import IndexHero from "$lib/component/IndexHero/index.svelte";
 	import school from "./kalam-kudus.jpg";
+  import smpkgs from "./logo-penabur.png";
 	import bee from "./tightboi.png";
 	const participants = [
     {
       code: "M001",
       names: ["Franklin Filbert"],
       school: "SMP Witama",
-      insignia: bee,
+      insignia: smpkgs,
     },
 		{
 			code: "M002",
@@ -257,7 +258,7 @@
 				next = _.sample(participants);
 			}
 			shown = next;
-		}, 1000);
+		}, 200);
 	});
 
 	const magic = () => {
