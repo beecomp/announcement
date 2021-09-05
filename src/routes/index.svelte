@@ -1,36 +1,36 @@
 <script>
-	import { fly, fade } from 'svelte/transition';
-	import { onMount } from 'svelte';
-	import _ from 'lodash';
+	import { fly, fade } from "svelte/transition";
+	import { onMount } from "svelte";
+	import _ from "lodash";
 
-	import IndexHero from '$lib/component/IndexHero/index.svelte';
-	import school from './kalam-kudus.jpg';
-	import bee from './tightboi.png';
+	import IndexHero from "$lib/component/IndexHero/index.svelte";
+	import school from "./kalam-kudus.jpg";
+	import bee from "./tightboi.png";
 	const participants = [
 		{
-			code: 'MAT-069',
-			names: ['Otto Alexander Sutianto', 'William Leonard Sumendap'],
-			school: 'SMP Kalam Kudus Solo',
-			insignia: school
+			code: "MAT-069",
+			names: ["Otto Alexander Sutianto", "William Leonard Sumendap"],
+			school: "SMP Kalam Kudus Solo",
+			insignia: school,
 		},
 		{
-			code: 'MAT-420',
-			names: ['Lebah Lebah Lebah', 'Buzz "Aldrin" Buzz'],
-			school: 'SMP Kalam Kudus Solo',
-			insignia: bee
+			code: "MAT-420",
+			names: ["Lebah Lebah Lebah", 'Buzz "Aldrin" Buzz'],
+			school: "SMP Kalam Kudus Solo",
+			insignia: bee,
 		},
 		{
-			code: 'MAT-283',
-			names: ['tayo', 'adlkfjowqq n welkqw efi'],
-			school: 'SMPK PENABUR Gading Serpong',
-			insignia: bee
+			code: "MAT-283",
+			names: ["tayo", "adlkfjowqq n welkqw efi"],
+			school: "SMPK PENABUR Gading Serpong",
+			insignia: bee,
 		},
 		{
-			code: 'MAT-280',
-			names: ['AE803242434 eafdals', 'asd023 lewaofadsf'],
-			school: 'weirqnr230',
-			insignia: bee
-		}
+			code: "MAT-280",
+			names: ["AE803242434 eafdals", "asd023 lewaofadsf"],
+			school: "weirqnr230",
+			insignia: bee,
+		},
 	];
 
 	const winners = [participants[0], participants[2]];
@@ -41,7 +41,7 @@
 	onMount(() => {
 		const interval = setInterval(() => {
 			if (halted) return;
-			let next = _.sample(participants);
+			let next = shown;
 			while (next == shown || shownWinners.includes(next)) {
 				next = _.sample(participants);
 			}
@@ -98,7 +98,7 @@
 						{#key shown}
 							<div in:fly={{ y: 35, duration: 500 }}>
 								<div class="text-gray-700 text-4xl font-montserrat break-words">
-									SMP Kalam Kudus Solo
+									{shown.school}
 								</div>
 							</div>
 						{/key}
@@ -108,7 +108,7 @@
 					<ul class="font-barlow-semi text-gray-700 text-xl space-y-1">
 						{#each shownWinners as t}
 							<li class="text-center">
-								{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(' - ')}
+								{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(" - ")}
 							</li>
 						{/each}
 					</ul>
