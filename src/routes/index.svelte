@@ -7,12 +7,12 @@
 	import school from "./kalam-kudus.jpg";
 	import bee from "./tightboi.png";
 	const participants = [
-		{
-			code: "M001",
-			names: ["Franklin Filbert"],
-			school: "SMP Witama",
-			insignia: school,
-		},
+    {
+      code: "M001",
+      names: ["Franklin Filbert"],
+      school: "SMP Witama",
+      insignia: bee,
+    },
 		{
 			code: "M002",
 			names: ["Adeline Fedora Cahyadi"],
@@ -318,8 +318,8 @@
 						{/key}
 					</div>
 				</div>
-				<div class="mt-8 w-full flex-grow max-w-2xl mx-auto p-4">
-					<ul class="font-barlow-semi text-gray-700 text-xl space-y-1">
+				<div class="mt-8 w-full flex-grow max-w-xl mx-auto p-2">
+					<ul class="font-barlow-semi text-gray-700 text-l space-y-1">
 						{#each _.take(shownWinners, 6) as t}
 							<li class="text-center">
 								{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(" - ")}
@@ -329,7 +329,7 @@
 				</div>
 				<button
 					on:click={() => magic()}
-					class="block w-full mt-4 h-2 max-w-2xl mx-auto bg-lavender rounded shadow p-4"
+					class="block w-full mt-4 h-2 max-w-xl mx-auto bg-lavender rounded shadow p-4"
 				/>
 			</div>
 		</div>
