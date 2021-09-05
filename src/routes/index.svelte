@@ -203,7 +203,7 @@
 				next = _.sample(participants);
 			}
 			shown = next;
-		}, 1000);
+		}, 250);
 	});
 
 	const magic = () => {
