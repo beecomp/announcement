@@ -8,12 +8,6 @@
 	import bee from "./tightboi.png";
 	const participants = [
 		{
-			code: "M001",
-			names: ["Franklin Filbert"],
-			school: "SMP Witama",
-			insignia: school,
-		},
-		{
 			code: "M002",
 			names: ["Adeline Fedora Cahyadi"],
 			school: "SMP Xaverius 1 Bandarlampung",
