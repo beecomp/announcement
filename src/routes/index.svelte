@@ -4,10 +4,27 @@
 	import _ from "lodash";
 
 	import IndexHero from "$lib/component/IndexHero/index.svelte";
-	import kalamkudus from "./logo-kalamkudus.jpg";
+	
+  import athalia from "./logo-athalia.png";
+  import bustanul from "./logo-bustanulmakmur.png";
+  import cahayabangsa from "./logo-cahayabangsa.png";
+  import darmayudha from "./logo-darmayudha.jpg";
+  import globalprestasi from "./logo-globalprestasi.png";
+  import ipeka from "./logo-ipeka.png";
+  import it from "./logo-it.png";
+  import kalamkudus from "./logo-kalamkudus.jpg";
+  import kharismabangsa from "./logo-kharismabangsa.png";
+  import kosayu from "./logo-kosayu.png";
   import penabur from "./logo-penabur.png";
+  import petra from "./logo-petra.png";
+  import pribadidepok from "./logo-pribadidepok.jpg";
+  import raffles from "./logo-raffles.jpg";
+  import rajawali from "./logo-rajawali.jpg";
+  import witama from "./logo-witama.jpg";
+  import xaverius from "./logo-xaverius.jpg";
 	import bee from "./tightboi.png";
-	const participants = [
+	
+  const participants = [
     {
       code: "M001",
       names: ["Franklin Filbert"],
