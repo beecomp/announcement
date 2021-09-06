@@ -9,6 +9,7 @@
   import cahayarancamaya from "./logo-cahayarancamaya.jpg";
   import darmayudha from "./logo-darmayudha.jpg";
   import globalprestasi from "./globalprestasi.png";
+  import ipeka from "./logo-ipeka.png";
   import kalamkudus from "./logo-kalamkudus.jpg";
   import ketapang from "./logo-ketapang.png";
   import kharismabangsa from "./logo-kharismabangsa.png";
@@ -139,67 +140,67 @@
       code: "S025",
       names: ["Sammuel Lim, Anthony Christian"],
       school: "SMP Kristen IPEKA Puri",
-      insignia: bee,
+      insignia: ipeka,
     },
     {
       code: "S027",
       names: ["Jack Howard Wijaya, Juan Howard Wijaya"],
       school: "SMP Darma Yudha Pekanbaru",
-      insignia: bee,
+      insignia: darmayudha,
     },
     {
       code: "S028",
       names: ["Bagasmora Andreo Sibarani, Mikhael Faith Benaiah L. Saragih"],
       school: "SMP Darma Yudha Pekanbaru",
-      insignia: bee,
+      insignia: darmayudha,
     },
     {
       code: "S029",
       names: ["Khansky Khonery, Melvin Raphael Gandaatmaja"],
       school: "Santa Laurensia Junior High School",
-      insignia: bee,
+      insignia: santalaurensia,
     },
     {
       code: "S030",
       names: ["Nathan Raphael Martua N., William Tengganu"],
       school: "SMP Global Prestasi",
-      insignia: bee,
+      insignia: globalprestasi,
     },
     {
       code: "S031",
       names: ["Tsabitah Abiyyu, Joanna Stevia C."],
       school: "SMP Global Prestasi",
-      insignia: bee,
+      insignia: globalprestasi,
     },
     {
       code: "S032",
       names: ["Clara Christovia Sahetapy, Sevonarola Haryo Lumenta"],
       school: "SMP Athalia",
-      insignia: bee,
+      insignia: athalia,
     },
     {
       code: "S033",
       names: ["Feliska Adenia Lubitha, Cornelius Jabez Lim"],
       school: "SMP Athalia",
-      insignia: bee,
+      insignia: athalia,
     },
     {
       code: "S034",
       names: ["Matthew Christopher H, Kaitlyn Illian Toniman"],
       school: "SMPK Penabur Gading Serpong",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S035",
       names: ["Gabriella Anna Santoso, Kayla Theodora Wibisana"],
       school: "SMPK Kelapa Gading",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S036",
       names: ["Fiorine Audiera Han"],
       school: "SMPK PENABUR Kota Modern",
-      insignia: bee,
+      insignia: penabur,
     },
   ];
 
