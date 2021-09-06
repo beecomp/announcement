@@ -4,8 +4,8 @@
 	import _ from "lodash";
 
 	import IndexHero from "$lib/component/IndexHero/index.svelte";
-	import school from "./kalam-kudus.jpg";
-  import smpkgs from "./logo-penabur.png";
+	import kalamkudus from "./logo-kalamkudus.jpg";
+  import penabur from "./logo-penabur.png";
 	import bee from "./tightboi.png";
 	const participants = [
     {
