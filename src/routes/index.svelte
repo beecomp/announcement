@@ -4,122 +4,136 @@
 	import _ from "lodash";
 
 	import IndexHero from "$lib/component/IndexHero/index.svelte";
-	import school from "./kalam-kudus.jpg";
+
+  import athalia from "./logo-athalia.png";
+  import cahayarancamaya from "./logo-cahayarancamaya.jpg";
+  import darmayudha from "./logo-darmayudha.jpg";
+  import globalprestasi from "./globalprestasi.png";
+  import kalamkudus from "./logo-kalamkudus.jpg";
+  import ketapang from "./logo-ketapang.png";
+  import kharismabangsa from "./logo-kharismabangsa.png";
+  import marsudirini from "./logo-marsudirini.jpg";
+  import penabur from "./logo-penabur.png";
+  import petra from "./logo-petra.png";
+  import rajawali from "./logo-rajawali.jpg";
+  import santalaurensia from "./logo-santalaurensia.png";
+  import santoaloysius from "./logo-santoaloysius.jpeg";
+
 	import bee from "./tightboi.png";
 	const participants = [
     {
       code: "S001",
       names: ["Baruna Adi Sanjaya, Narendra Aditya Tanoto"],
       school: "SMP Cahaya Rancamaya",
-      insignia: bee,
+      insignia: cahayarancamaya,
     },
     {
       code: "S003",
       names: ["Satya Virya Atmadja"],
       school: "SMPK Penabur Serang",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S004",
       names: ["Felicia Putri Gondokusumo, Herbert Karsten Juwono"],
       school: "SMP Kristen Petra 3 Surabaya",
-      insignia: bee,
+      insignia: petra,
     },
     {
       code: "S005",
       names: ["Fariz Rayyan Firdaus, Dzakwan Alvaro Putra"],
       school: "SMP Kharisma Bangsa",
-      insignia: bee,
+      insignia: kharismabangsa,
     },
     {
       code: "S006",
       names: ["Abdullah Karim, Pradipto Pandu Maheswara"],
       school: "SMP Kharisma Bangsa",
-      insignia: bee,
+      insignia: kharismabangsa,
     },
     {
       code: "S009",
       names: ["Richard Huang"],
       school: "SMPK Penabur Gading Serpong",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S010",
       names: ["Justin, Edward Eugene Surya"],
       school: "SMPK 2 Penabur",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S011",
       names: ["Stevenson Christopher Hudiono, Cheerish Natalia Rifel"],
       school: "SMPK 2 Penabur",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S012",
       names: ["Adriel Nathanael Winfryd, Krislyn W Riyadi"],
       school: "SMPK 7 Penabur",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S013",
       names: ["Cynthia Nikita Wibowo, Jeremee Rafael Wynn"],
       school: "SMPK Penabur Kota Modern",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S014",
       names: ["Welfrydus Winnersdy Rante, Tiara Siddhi Fonso"],
       school: "SMP Katolik Rajawali Makassar",
-      insignia: bee,
+      insignia: rajawali,
     },
     {
       code: "S015",
       names: ["Justin Benaya Tirtadjaja, Fellyta Aquila Chiandra"],
       school: "SMP Marsudirini Bogor",
-      insignia: bee,
+      insignia: marsudirini,
     },
     {
       code: "S016",
       names: ["Kenneth Nicander Wijaya, Stefani Angela"],
       school: "SMPK 6 Penabur",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S017",
       names: ["Vanessa Natalie Karlina, Katharine Lauren Tie"],
       school: "SMP Santo Aloysius 2",
-      insignia: bee,
+      insignia: santoaloysius,
     },
     {
       code: "S018",
       names: ["Abigail Venus Rashando, Calysta Bernice Prasasti"],
       school: "SMP Santo Aloysius 2",
-      insignia: bee,
+      insignia: santoaloysius,
     },
     {
       code: "S019",
       names: ["Joshua Emmanuel Wahyu, Vania Feby Wijaya"],
       school: "SMPK 2 PENABUR",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S020",
       names: ["Felix Halley Thamin, Gratia Plena Kusdevina"],
       school: "SMPK 4 Penabur",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S022",
       names: ["Abraham Brandon Purnama"],
       school: "SMP Kristen Ketapang 1 Jakarta",
-      insignia: bee,
+      insignia: ketapang,
     },
     {
       code: "S023",
       names: ["Ethan Samuel Benaya Khu"],
       school: "SMPK Penabur Kota Modern",
-      insignia: bee,
+      insignia: penabur,
     },
     {
       code: "S025",
@@ -190,6 +204,9 @@
   ];
 
 	const winners = [
+    participants[0], participants[1], participants[2], participants[3],
+    participants[4], participants[5], participants[6], participants[7],
+    participants[8], participants[9], participants[10], participants[11]
   ];
 	let shownWinners = [];
 
@@ -226,7 +243,7 @@
 			<div class="flex flex-col h-full p-12 max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
 				<div class="flex space-x-16">
 					{#key shown}
-						<div in:fly={{ y: 50, duration: 500 }} class="bg-white rounded-lg shadow-lg p-4 z-10">
+						<div in:fly={{ y: 30, duration: 250 }} class="bg-white rounded-lg shadow-lg p-4 z-10">
 							<img
 								class="h-[20rem] min-h-[20rem] w-[20rem] min-w-[20rem] object-contain"
 								src={shown.insignia}
@@ -237,7 +254,7 @@
 
 					<div class="flex flex-col">
 						{#key shown}
-							<div in:fly={{ delay: 100, y: 100, duration: 500 }}>
+							<div in:fly={{ delay: 100, y: 80, duration: 250 }}>
 								<div class="text-gray-700 text-5xl font-montserrat break-words">
 									{shown.names[0]}
 								</div>
@@ -253,7 +270,7 @@
 						{/key}
 						<div class="flex-grow" />
 						{#key shown}
-							<div in:fly={{ y: 35, duration: 500 }}>
+							<div in:fly={{ y: 15, duration: 250 }}>
 								<div class="text-gray-700 text-4xl font-montserrat break-words">
 									{shown.school}
 								</div>
