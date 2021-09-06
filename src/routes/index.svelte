@@ -245,7 +245,7 @@
 			<div class="flex flex-col h-full p-12 max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
 				<div class="flex space-x-16">
 					{#key shown}
-						<div in:fly={{ y: 30, duration: 250 }} class="bg-white rounded-lg shadow-lg p-4 z-10">
+						<div in:fly={{ y: 25, duration: 250 }} class="bg-white rounded-lg shadow-lg p-4 z-10">
 							<img
 								class="h-[20rem] min-h-[20rem] w-[20rem] min-w-[20rem] object-contain"
 								src={shown.insignia}
@@ -256,7 +256,7 @@
 
 					<div class="flex flex-col">
 						{#key shown}
-							<div in:fly={{ delay: 100, y: 80, duration: 250 }}>
+							<div in:fly={{ delay: 100, y: 50, duration: 250 }}>
 								<div class="text-gray-700 text-5xl font-montserrat break-words">
 									{shown.names[0]}
 								</div>
