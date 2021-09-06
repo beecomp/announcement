@@ -174,7 +174,7 @@
       code: "M030",
       names: ["Neisha Calya Mahardhika", "Zidan Akrom Putra"],
       school: "SMP Pribadi Depok",
-      insignia: kosayu,
+      insignia: pribadidepok,
     },
     {
       code: "M031",
