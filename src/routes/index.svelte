@@ -8,7 +8,7 @@
   import athalia from "./logo-athalia.png";
   import cahayarancamaya from "./logo-cahayarancamaya.jpg";
   import darmayudha from "./logo-darmayudha.jpg";
-  import globalprestasi from "./globalprestasi.png";
+  import globalprestasi from "./logo-globalprestasi.png";
   import ipeka from "./logo-ipeka.png";
   import kalamkudus from "./logo-kalamkudus.jpg";
   import ketapang from "./logo-ketapang.png";
