@@ -272,7 +272,7 @@
 						{/key}
 						<div class="flex-grow" />
 						{#key shown}
-							<div in:fly={{ y: 15, duration: 250 }}>
+							<div in:fly={{ y: 20, duration: 250 }}>
 								<div class="text-gray-700 text-4xl font-montserrat break-words">
 									{shown.school}
 								</div>
@@ -280,8 +280,8 @@
 						{/key}
 					</div>
 				</div>
-				<div class="mt-8 w-full flex-grow max-w-2xl mx-auto p-4">
-					<ul class="font-barlow-semi text-gray-700 text-xl space-y-1">
+				<div class="mt-8 w-full flex-grow max-w-xl mx-auto p-4">
+					<ul class="font-barlow-semi text-gray-700 text-l space-y-1">
 						{#each _.take(shownWinners, 6) as t}
 							<li class="text-center">
 								{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(" - ")}
