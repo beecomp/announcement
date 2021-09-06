@@ -330,7 +330,7 @@
 						{/key}
 						<div class="flex-grow" />
 						{#key shown}
-							<div in:fly={{ y: 15, duration: 250 }}>
+							<div in:fly={{ y: 20, duration: 250 }}>
 								<div class="text-gray-700 text-4xl font-montserrat break-words">
 									{shown.school}
 								</div>
