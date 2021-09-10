@@ -204,7 +204,7 @@
     // },
   ];
 
-	const winners = [participants[2], participants[4], participants[0], participants[3], participants[1]];
+	const winners = [participants[2], participants[4], participants[0], participants[1], participants[3]];
 	let shownWinners = [];
 
 	let shown = _.head(participants);
