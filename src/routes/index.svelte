@@ -252,15 +252,15 @@
 					<div class="flex flex-col">
 						{#key shown}
 							<div in:fly={{ delay: 100, y: 50, duration: 250 }}>
-								<div class="text-gray-700 text-5xl font-montserrat break-words">
+								<div class="text-white text-5xl font-montserrat break-words">
 									{shown.names[0]}
 								</div>
 								{#if shown.names[1]}
-									<div class="mt-8 text-gray-700 text-5xl font-montserrat break-words">
+									<div class="mt-8 text-white text-5xl font-montserrat break-words">
 										{shown.names[1]}
 									</div>
 								{/if}
-								<div class="text-gray-500 text-3xl italic font-montserrat break-words">
+								<div class="text-white text-3xl italic font-montserrat break-words">
 									{shown.code}
 								</div>
 							</div>
@@ -268,7 +268,7 @@
 						<div class="flex-grow" />
 						{#key shown}
 							<div in:fly={{ y: 20, duration: 250 }}>
-								<div class="text-gray-700 text-4xl font-montserrat break-words">
+								<div class="text-white text-4xl font-montserrat break-words">
 									{shown.school}
 								</div>
 							</div>
@@ -276,7 +276,7 @@
 					</div>
 				</div>
 				<div class="mt-8 w-full flex-grow max-w-xl mx-auto p-4">
-					<ul class="font-barlow-semi text-gray-700 text-l space-y-1">
+					<ul class="font-barlow-semi text-white text-l space-y-1">
 						{#each _.take(shownWinners, 6) as t}
 							<li class="text-center">
 								{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(" - ")}

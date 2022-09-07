@@ -16,28 +16,9 @@
 <div class="pt-4 pb-0 w-full max-w-lg mx-auto">
 	<svg viewBox="-100 -15 200 75">
 		<text
-			x="0"
-			y="0"
-			class="text-2xl font-alfa italic tracking-wide fill-current text-lavender"
-			dominant-baseline="central"
-			text-anchor="middle"
-		>
-			BRILLIANT
-		</text>
-		<text
-			x="1"
-			y="0.5"
-			class="text-2xl font-alfa italic tracking-wide fill-current text-lavender opacity-40"
-			dominant-baseline="central"
-			text-anchor="middle"
-		>
-			BRILLIANT
-		</text>
-
-		<text
 			x="4"
 			y="2"
-			class="text-2xl font-alfa italic tracking-wide stroke-current text-lavender stroke-1"
+			class="text-2xl font-alfa italic tracking-wide stroke-current text-yellow-500 stroke-1"
 			dominant-baseline="central"
 			fill="transparent"
 			text-anchor="middle"
@@ -48,21 +29,9 @@
 		<text
 			x="0"
 			y="25"
-			class="text-2xl font-barlow-semi italic tracking-wide fill-current text-coral"
+			class="text-2xl font-barlow-semi italic tracking-wide fill-current text-white"
 			dominant-baseline="central"
 			text-anchor="middle"
-		>
-			COMPETITION
-		</text>
-		<text
-			x="0"
-			y="28"
-			class="font-barlow-semi italic tracking-wide stroke-current text-coral"
-			dominant-baseline="central"
-			fill="transparent"
-			text-anchor="middle"
-			font-size="1.45rem"
-			stroke-width="0.5"
 		>
 			COMPETITION
 		</text>
@@ -70,12 +39,12 @@
 		<text
 			x="0"
 			y="50.5"
-			class="font-montserrat tracking-wider fill-current text-gray-700"
+			class="font-montserrat tracking-wider fill-current text-white"
 			dominant-baseline="central"
 			text-anchor="middle"
 			font-size="0.625rem"
 		>
-			UNLOCKING YOUR BRILLIANCE
+			AGE OF BRILLIANCE
 		</text>
 	</svg>
 </div>
