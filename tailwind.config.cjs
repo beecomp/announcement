@@ -12,7 +12,6 @@ const config = {
 			colors: {
 				lavender: "#b6c4e1",
 				coral: "#ff9e5e",
-				grayish: "#44403c",
 				"coral-light": "#fdb98d",
 			},
 		},
