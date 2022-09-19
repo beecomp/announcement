@@ -1,15 +1,13 @@
 <script type="text/javascript">
 	import penabur from './logo-penabur.png';
-	import bee from './skinnyboi.png';
+	import bee from './skinnyboiv1.png';
 	import stripedCircle from './striped-circle.svg';
 	import squiggle from './squiggle.svg';
 </script>
 
 <div class="relative">
-	<div class="absolute top-6 left-6 flex">
-		<img class="h-32" src={penabur} alt="logo-penabur" />
-		<img class="h-32" src={bee} alt="logo-bcomp" />
-	</div>
+	<img class="absolute w-36 top-7 right-96 z-0" src={bee} alt="logo-bcomp" />
+	<img class="absolute top-10 left-96 w-36 z-0" src={penabur} alt="logo-penabur" />
 	<img class="absolute top-0 right-0 w-56 z-0" src={stripedCircle} alt="" />
 	<img class="absolute top-64 left-0 w-24 z-0" src={squiggle} alt="" />
 </div>
