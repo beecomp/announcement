@@ -1,6 +1,9 @@
 <script type="text/javascript">
 	import penabur from './logo-penabur.png';
 	import bee from './skinnyboiv1.png';
+	import hexA from './pat-hex-a.png';
+	import hexB from'./pat-hex-b.png';
+	import stripedPentagon from './striped-pentagon.svg';
 	import stripedCircle from './striped-circle.svg';
 	import squiggle from './squiggle.svg';
 </script>
@@ -8,8 +11,15 @@
 <div class="relative">
 	<img class="absolute w-36 top-7 right-96 z-0" src={bee} alt="logo-bcomp" />
 	<img class="absolute top-10 left-96 w-36 z-0" src={penabur} alt="logo-penabur" />
+	<img class="absolute top-[40rem] left-0 w-64 z-0" src={hexA} alt="" />
+	<img class="absolute top-[40rem] right-0 w-64 z-0" src={hexB} alt="" />
+	<img class="absolute top-0 left-0 w-56 z-0" src={stripedPentagon} alt="" />
 	<img class="absolute top-0 right-0 w-56 z-0" src={stripedCircle} alt="" />
 	<img class="absolute top-64 left-0 w-24 z-0" src={squiggle} alt="" />
+	<svg class="absolute top-[32rem] right-0 w-48" viewBox="-100 0 105 50">
+		<rect class="fill-current text-yellow-500 opacity-70" x="-70" y="0" width="80" height="15" />
+		<rect class="fill-current text-yellow-500" x="-100" y="25" width="110" height="15" />
+	</svg>
 </div>
 <div class="pt-4 pb-0 w-full max-w-lg mx-auto">
 	<svg viewBox="-100 -15 200 75">
