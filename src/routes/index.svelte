@@ -19,7 +19,7 @@
   import rajawali from "./logo-rajawali.jpg";
   import santalaurensia from "./logo-santalaurensia.png";
   import santoaloysius from "./logo-santoaloysius.jpeg";
-	import bee from "./tightboi.png";
+	import bee from "./skinnyboi.png";
 
 	const participants = [
     { // 0

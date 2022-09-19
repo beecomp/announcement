@@ -1,6 +1,6 @@
 <script type="text/javascript">
 	import penabur from './logo-penabur.png';
-	import bee from './tightboi.png';
+	import bee from './skinnyboi.png';
 	import stripedCircle from './striped-circle.svg';
 	import squiggle from './squiggle.svg';
 </script>
@@ -44,7 +44,7 @@
 			text-anchor="middle"
 			font-size="0.625rem"
 		>
-			AGE OF BRILLIANCE
+			A NEW AGE OF BRILLIANCE
 		</text>
 	</svg>
 </div>
