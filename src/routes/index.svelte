@@ -6,226 +6,114 @@
 	import IndexHero from "$lib/component/IndexHero/index.svelte";
 	
   import athalia from "./logo-athalia.png";
-  import bustanul from "./logo-bustanulmakmur.png";
-  import cahayabangsa from "./logo-cahayabangsa.png";
-  import darmayudha from "./logo-darmayudha.jpg";
-  import globalprestasi from "./logo-globalprestasi.png";
-  import it from "./logo-it.png";
-  import kalamkudus from "./logo-kalamkudus.jpg";
-  import kharismabangsa from "./logo-kharismabangsa.png";
-  import kosayu from "./logo-kosayu.png";
-  import mawar from "./logo-mawarsharon.png";
+  import darmayudha from "./logo-darmayudha.png";
   import penabur from "./logo-penabur.png";
-  import kebayoran from "./kebayoran.png";
-  import petra from "./logo-petra.png";
-  import pribadidepok from "./logo-pribadidepok.jpg";
-  import insanharapan from "./insanharapan.png";
-  import raffles from "./logo-raffles.jpg";
-  import rajawali from "./logo-rajawali.jpg";
-  import bintanglaut from "./plbintang.png";
-  import witama from "./logo-witama.jpg";
-  import malang from "./malang.png";
-  import xaverius from "./logo-xaverius.jpg";
+  import kebayoran from "./logo-kebayoran.png";
+  import insanharapan from "./logo-insanharapan.png";
+  import bintanglaut from "./logo-plbintang.png";
+  import rajawali from "./logo-katolikrajawali.png";
+  import witama from "./logo-witama.png";
+  import malang from "./logo-1malang.png";
+  import xaverius from "./logo-xaverius.png";
+  import kharismabangsa from "./logo-kharismabangsa.jpg";
   import kristenkanaan from "./logo-kristenkanaan.png";
   import PL from "./logo-pangudiluhur.png";
   import TB from "./logo-tarunabangsa.png";
-  import ipeka from "./ipeka.png";
+  import ipeka from "./logo-ipeka.png";
 	import bee from "./tightboi.png";
 	
   const participants = [
-    { // 0
-      code: "M002",
-      names: ["Reynard Jamjan"],
-      school: "Sekolah Terpadu Pahoa",
-      insignia: witama,
-    },
-    { // 12
-      code: "M004",
-      names: ["Steven Prijadi", "Felicia Kaware"],
-      school: "SMP Katolik Santa Clara Surabaya",
-      insignia: rajawali,
-    },
-    { // 13
-      code: "M007",
-      names: ["Willard Ricxie Phanagara", "Logan Bennedict Sun"],
-      school: "SMPK 6 PENABUR",
-      insignia: penabur,
-    },
-    { // 17
-      code: "M009",
-      names: ["Kenzo Alvaro Lim"],
-      school: "SMP Witama Nasional Plus",
-      insignia: witama,
-    },
-    { // 25
-      code: "M017",
-      names: ["Jaden Nathaniel", "Christian Julius Hidajat"],
-      school: "SMPK 1 BPK PENABUR Bandung",
-      insignia: penabur,
-    },
 
-	{ // 26
-      code: "M024",
-      names: ["Daffa Atha Arkana", "Nurisna Anara Mughni Rayyan"],
-      school: "MTsN 1 Kota Malang",
-      insignia: malang,
-    },
-
-	{ // 27
-      code: "M031",
-      names: ["Franklin Filbert Irwan", "Nurisna Anara Mughni Rayyan"],
-      school: "SMP Witama Nasional plus",
-      insignia: witama,
-    },
-
-	{ // 27
-      code: "M036",
-      names: ["Safira Laksmi Dewi", "Khairunnisa Athifah"],
-      school: "SMP IT Insan Harapan",
-      insignia: insanharapan,
-    },
-
-	{ // 27
-      code: "M043",
-      names: ["Gweneth Eliana Wahjono", "Christian Samuel Jehuda Setiawan"],
-      school: "SMPK PENABUR Kota Modern",
-      insignia: penabur,
-    },
-
-	{ // 27
-      code: "M045",
-      names: ["Neilson Huang", "Grace Christinalie"],
-      school: "SMP Darma Yudha",
-      insignia: darmayudha,
-    },
-
-	{ // 27
-      code: "M050",
-      names: ["Rafi Nashra Zafa Harahap", "Danish Ahmad Satria"],
-      school: "SMP Labschool Kebayoran",
-      insignia: kebayoran,
-    },
-
-	{ // 27
-      code: "M053",
-      names: ["Jayden Jurianto", ""],
-      school: "IPEKA TOMANG",
-      insignia: ipeka,
-    },
-
-	{ // 27
-      code: "M055",
-      names: ["Rameyza Elya Salsabila", "JAVIER FAWWAZ HIBATULLAH"],
-      school: "MTsN 1 Kota Malang",
-      insignia: malang,
-    },
-
-	{ // 27
-      code: "M065",
-      names: ["Winston Christian Gani"],
-      school: "SMPK7 PENABUR JAKARTA",
-      insignia: penabur,
-    },
-
-	{ // 27
-      code: "M076",
-      names: ["Gabriella Natalia Rosa Karsono"],
-      school: "SMP PL Bintang Laut Surakarta",
-      insignia: bintanglaut,
-    },
-	
-	
-
-	// { // 26
-   //  code: "S012",
-   //  names: ["Helena Subrata", "Audrey Vallerie Riady"],
-	// school: "SMPK PENABUR GADING SERPONG",
-    // insignia: penabur,
-    // },
-    // { // 27
-    //   code: "S016",
-    //   names: ["Felicia Ivana Yuval", "Benjamin Hutapea"],
-    //   school: "SMPK 7 Penabur Jakarta",
-    //   insignia: penabur,
-    // },
-    // { // 28
-    //   code: "S017",
-    //   names: ["Davino Sugianto", "Devin Cahyadi"],
-    //   school: "SMPK 7 PENABUR JAKARTA",
-    //   insignia: penabur,
-    // },
-    // { // 29
-    //   code: "S019",
-    //   names: ["Felicia Lovina Cuaca, "Ruben Valentino Rasoki Pardede"],
-    //   school: "SMP Kristen Kanaan Banjarmasin",
-    //   insignia: kristenkanaan,
-    // },
-    // { // 30
-    //   code: "S023",
-    //   names: ["Michell Alicia"],
-    //   school: "SMPK Penabur Kota Modern",
-    //   insignia: penabur,
-    // },
-    // { // 31
-    //   code: "S025",
-    //   names: ["Jeremias Shalomoses Simangunsong", "Keiko Maxwell"],
-    //   school: "SMPK BPK Penabur Singgasana",
-    //   insignia: penabur,
-    // },
-    // { // 32
-    //   code: "S027",
-    //   names: ["Bagasmora Andreo Sibarani", "Mikhael Faith Benaiah Liveroy Saragih],
-    //   school: "SMP Darma Yudha",
-    //   insignia: darmayudha,
-    // },
-    // { // 33
-    //   code: "S032",
-    //   names: ["Samuel Tan", "Wesley Adrian Laurance"],
-    //   school: "Sekolah Athalia",
-    //   insignia: athalia,
-    // },
-    // { // 34
-    //   code: "S034",
-    //   names: ["Dzakwan Alvaro Putra Yudana", "Fariz Rayyan Firdaus"],
-    //   school: "Kharisma Bangsa",
-    //   insignia: kharismabangsa,
-    // },
-    // { // 35
-    //   code: "S036",
-    //   names: ["Kaleb Iash Elnathan Naibaho", "Cokorda Bagus Satria Adijaya"],
-    //   school: "SMP Pangudi Luhur Jakarta",
-    //   insignia: PL,
-    // },
-    // { // 36
-    //   code: "S040",
-    //   names: ["Cheryll Adeline Saputra", "Darren Kenzie"],
-    //   school: "SMPK 1 BPK PENABUR Bandung",
-    //   insignia: penabur,
-    // },
-    // { // 37
-    //   code: "S044",
-    //   names: ["Gede Panji Gelgel Wiradarma", "Maudry Viriya Prawira"],
-    //   school: "SMP Taruna Bangsa",
-    //   insignia: TB,
-    // },
-    // { // 38
-    //   code: "S046",
-    //   names: ["Sulthan Maulana Akbar Nasution", "Mika Farees Anwar"],
-    //   school: "SMP Labschool Kebayoran",
-    //   insignia: kebayoran,
-    // },
-	 // { // 38
-    //   code: "S048",
-    //   names: ["RANUGUNAR SAVAHASTA", "VANIA MARISSA FAYOLA RITONGA"],
-    //   school: "SMP LABSCHOOL KEBAYORAN",
-    //   insignia: kebayoran,
-    // },
-	 // { // 38
-    //   code: "S050",
-    //   names: ["Elliana Gracia Davina Harwinanto", "Daniel Surya Chandra"],
-    //   school: "SMPK 2 PENABUR JAKARTA",
-    //   insignia: penabur,
-    // },
+	 {  
+     code: "S012",
+     names: ["Helena Subrata", "Audrey Vallerie Riady"],
+	 school: "SMPK PENABUR GADING SERPONG",
+     insignia: penabur,
+     },
+     {  
+       code: "S016",
+       names: ["Felicia Ivana Yuval", "Benjamin Hutapea"],
+       school: "SMPK 7 Penabur Jakarta",
+       insignia: penabur,
+     },
+     {  
+       code: "S017",
+       names: ["Davino Sugianto", "Devin Cahyadi"],
+       school: "SMPK 7 PENABUR JAKARTA",
+       insignia: penabur,
+     },
+     { 
+       code: "S019",
+       names: ["Felicia Lovina Cuaca", "Ruben Valentino Rasoki Pardede"],
+       school: "SMP Kristen Kanaan Banjarmasin",
+       insignia: kristenkanaan,
+     },
+     { 
+       code: "S023",
+       names: ["Michell Alicia"],
+       school: "SMPK Penabur Kota Modern",
+       insignia: penabur,
+     },
+     {  
+       code: "S025",
+       names: ["Jeremias Shalomoses Simangunsong", "Keiko Maxwell"],
+       school: "SMPK BPK Penabur Singgasana",
+       insignia: penabur,
+     },
+     {  
+       code: "S027",
+       names: ["Bagasmora Andreo Sibarani", "Mikhael Faith Benaiah Liveroy Saragih"],
+       school: "SMP Darma Yudha",
+       insignia: darmayudha,
+     },
+     { 
+       code: "S032",
+       names: ["Samuel Tan", "Wesley Adrian Laurance"],
+       school: "Sekolah Athalia",
+       insignia: athalia,
+     },
+     {  
+       code: "S034",
+       names: ["Dzakwan Alvaro Putra Yudana", "Fariz Rayyan Firdaus"],
+       school: "Kharisma Bangsa",
+       insignia: kharismabangsa,
+     },
+     {
+    	code: "S036",
+       names: ["Kaleb Iash Elnathan Naibaho", "Cokorda Bagus Satria Adijaya"],
+       school: "SMP Pangudi Luhur Jakarta",
+       insignia: PL,
+     },
+     {  
+       code: "S040",
+       names: ["Cheryll Adeline Saputra", "Darren Kenzie"],
+       school: "SMPK 1 BPK PENABUR Bandung",
+       insignia: penabur,
+     },
+     {  
+       code: "S044",
+       names: ["Gede Panji Gelgel Wiradarma", "Maudry Viriya Prawira"],
+       school: "SMP Taruna Bangsa",
+       insignia: TB,
+     },
+     {  
+       code: "S046",
+       names: ["Sulthan Maulana Akbar Nasution", "Mika Farees Anwar"],
+       school: "SMP Labschool Kebayoran",
+       insignia: kebayoran,
+     },
+	  {  
+       code: "S048",
+       names: ["RANUGUNAR SAVAHASTA", "VANIA MARISSA FAYOLA RITONGA"],
+       school: "SMP LABSCHOOL KEBAYORAN",
+       insignia: kebayoran,
+     },
+	  { 
+       code: "S050",
+       names: ["Elliana Gracia Davina Harwinanto", "Daniel Surya Chandra"],
+       school: "SMPK 2 PENABUR JAKARTA",
+       insignia: penabur,
+     },
 	];
 
 	const winners = [participants[0], participants[1], participants[4], participants[3], participants[2], participants[5], participants[6],participants[7], participants[8], participants[9], participants[10], participants[11], participants[12], participants[13], participants[14], participants[15]];
