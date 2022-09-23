@@ -21,44 +21,53 @@
   import pribadidepok from "./logo-pribadidepok.jpg";
   import raffles from "./logo-raffles.jpg";
   import rajawali from "./logo-rajawali.jpg";
+  import bintanglaut from "./logo-plbintang.png";
   import witama from "./logo-witama.jpg";
+  import malang from "./logo-1malang.png";
   import xaverius from "./logo-xaverius.jpg";
 	import bee from "./tightboi.png";
 	
   const participants = [
-    { 
-      code: "M001",
-      names: ["Franklin Filbert"],
-      school: "SMP Witama",
+    { // 0
+      code: "M009",
+      names: ["Kenzo Alvaro Lim"],
+      school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
 
-    {
-      code: "M014",
-      names: ["Michael Cenreng", "Grace Lucretia"],
-      school: "SMP Katolik Rajawali",
-      insignia: rajawali,
+    { // 1
+      code: "M024",
+      names: ["Daffa Atha Arkana", "Nurisna Anara"],
+      school: "MTsN 1 Kota Malang",
+      insignia: malang,
     },
 
-    { 
-      code: "M015",
-      names: ["Ben Robinson", "Ethan Anderson"],
-      school: "SMP PETRA 1",
-      insignia: petra,
-    },
-
-    { 
-      code: "M023",
-      names: ["Kevin Adi Senjaya"],
-      school: "SMP Cahaya Bangsa Metro",
-      insignia: cahayabangsa,
-    },
-
-    {
+    { // 2
       code: "M031",
-      names: ["Leonardo Valerian", "Yvonnie Natasha"],
+      names: ["Franklin Filbert"],
+      school: "SMP Witama Nasional",
+      insignia: witama,
+    },
+
+    { // 3
+      code: "M045",
+      names: ["Neilson Huang", "Grace Christinalie"],
       school: "SMP Darma Yudha",
       insignia: darmayudha,
+    },
+
+    { // 4
+      code: "M053",
+      names: ["Jayden Jurianto"],
+      school: "IPEKA Tomang",
+      insignia: ipeka,
+    },
+
+    { // 5
+      code: "M076",
+      names: ["Gabriella Natalia"],
+      school: "SMP PL Bintang Luat Surakarta",
+      insignia: bintanglaut,
     },
 	];
 
