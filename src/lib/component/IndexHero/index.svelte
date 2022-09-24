@@ -9,8 +9,8 @@
 </script>
 
 <div class="relative">
-	<img class="absolute w-36 top-7 right-96 z-0" src={bee} alt="logo-bcomp" />
-	<img class="absolute top-10 left-96 w-36 z-0" src={penabur} alt="logo-penabur" />
+	<img class="absolute w-36 top-7 right-72 z-0" src={bee} alt="logo-bcomp" />
+	<img class="absolute top-10 left-72 w-36 z-0" src={penabur} alt="logo-penabur" />
 	<img class="absolute top-[40rem] left-0 w-64 z-0" src={hexA} alt="" />
 	<img class="absolute top-[40rem] right-0 w-64 z-0" src={hexB} alt="" />
 	<img class="absolute top-0 left-0 w-56 z-0" src={stripedPentagon} alt="" />

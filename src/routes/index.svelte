@@ -31,48 +31,90 @@
   const participants = [
 
   	{// 0
-		code: "MATEMATIKA",
+		code: "BIDANG MATEMATIKA",
 		names: ["PENGUMUMAN FINAL"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
 
-	{ // 6
+	{// 1
+		code: "BIDANG MATEMATIKA",
+		names: ["", "Peringkat 6"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
+
+	{ // 2
       code: "M009",
       names: ["PERINGKAT 6", "Temporary"],
       school: "Temporary school",
       insignia: witama,
     },
+
+	{// 3
+		code: "BIDANG MATEMATIKA",
+		names: ["", "JUARA 5"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
 	
-	{ // 5
+	{ // 4
       code: "M009",
       names: ["JUARA 5", "Kenzo Alvaro Lim"],
       school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
+	
+	{// 5
+		code: "BIDANG MATEMATIKA",
+		names: ["", "JUARA 4"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
 
-    { // 4
+    { // 6
       code: "M009",
       names: ["JUARA 4", "Kenzo Alvaro Lim"],
       school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
+	
+	{// 7
+		code: "BIDANG MATEMATIKA",
+		names: ["", "JUARA 3"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
 
-    { // 3
+    { // 8
       code: "M024",
       names: ["JUARA 3", "Daffa Atha Arkana"],
       school: "MTsN 1 Kota Malang",
       insignia: malang,
     },
+	
+	{// 9
+		code: "BIDANG MATEMATIKA",
+		names: ["", "JUARA 1"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
 
-    { // 2
+    { // 10
       code: "M031",
       names: ["JUARA 2", "Franklin Filbert"],
       school: "SMP Witama Nasional",
       insignia: witama,
     },
+	
+	{// 11
+		code: "BIDANG MATEMATIKA",
+		names: ["", "JUARA 2"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
 
-    { // 1
+    { // 12
       code: "M045",
       names: ["JUARA 1", "Neilson Huang"],
       school: "SMP Darma Yudha",
@@ -80,7 +122,8 @@
     },
 	];
 
-	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4],participants[5], participants[6]];
+	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4],participants[5], participants[6], participants[7], participants[8], participants[9]
+	, participants[12], participants[11], participants[10]];
 	let shownWinners = [];
 
 	let shown = _.head(participants);
