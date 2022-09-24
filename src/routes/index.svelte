@@ -39,91 +39,76 @@
 
 	{// 1
 		code: "BIDANG MATEMATIKA",
-		names: ["", "Peringkat 6"],
-		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
-	},
-
-	{ // 2
-      code: "M009",
-      names: ["PERINGKAT 6", "Temporary"],
-      school: "Temporary school",
-      insignia: witama,
-    },
-
-	{// 3
-		code: "BIDANG MATEMATIKA",
 		names: ["", "JUARA 5"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
 	
-	{ // 4
-      code: "M009",
-      names: ["JUARA 5", "Kenzo Alvaro Lim"],
-      school: "SMP Witama Nasional Plus",
-      insignia: witama,
+	{ // 2
+      code: "M076",
+      names: ["JUARA 5", "Gabriella Natalia"],
+      school: "SMP PL Bintang Laut Surakarta",
+      insignia: bintanglaut,
     },
 	
-	{// 5
+	{// 3
 		code: "BIDANG MATEMATIKA",
 		names: ["", "JUARA 4"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
 
-    { // 6
-      code: "M009",
-      names: ["JUARA 4", "Kenzo Alvaro Lim"],
+    { // 4
+      code: "M031",
+      names: ["JUARA 4", "Franklin Filbert Irwan"],
       school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
 	
-	{// 7
+	{// 5
 		code: "BIDANG MATEMATIKA",
 		names: ["", "JUARA 3"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
 
-    { // 8
-      code: "M024",
-      names: ["JUARA 3", "Daffa Atha Arkana"],
-      school: "MTsN 1 Kota Malang",
-      insignia: malang,
+    { // 6
+      code: "M009",
+      names: ["JUARA 3", "Kenzo Alvaro Lim"],
+      school: "SMP Witama Nasional Plus",
+      insignia: witama,
     },
 	
-	{// 9
+	{// 7
 		code: "BIDANG MATEMATIKA",
 		names: ["", "JUARA 1"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
 
-    { // 10
-      code: "M031",
-      names: ["JUARA 2", "Franklin Filbert"],
-      school: "SMP Witama Nasional",
-      insignia: witama,
+    { // 8
+      code: "M045",
+      names: ["JUARA 2", "Neilson Huang, Grace Christinalie"],
+      school: "SMP Darma Yudha",
+      insignia: darmayudha,
     },
 	
-	{// 11
+	{// 9
 		code: "BIDANG MATEMATIKA",
 		names: ["", "JUARA 2"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
 
-    { // 12
-      code: "M045",
-      names: ["JUARA 1", "Neilson Huang"],
-      school: "SMP Darma Yudha",
-      insignia: darmayudha,
+    { // 10
+      code: "M053",
+      names: ["JUARA 1", "Jayden Jurianto"],
+      school: "IPEKA Tomang",
+      insignia: ipeka,
     },
 	];
 
-	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4],participants[5], participants[6], participants[7], participants[8], participants[9]
-	, participants[12], participants[11], participants[10]];
+	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4], participants[5], participants[6], participants[7], participants[10], participants[9], participants[8]];
 	let shownWinners = [];
 
 	let shown = _.head(participants);
