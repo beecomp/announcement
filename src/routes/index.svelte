@@ -29,57 +29,58 @@
 	import bee from "./tightboi.png";
 	
   const participants = [
-	
-	{// 0
+
+  	{// 0
 		code: "BRILLIANT COMPETITION XIV",
 		names: ["PENGUMUMAN FINAL"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
-    { // 1
+
+	{ // 6
+      code: "M009",
+      names: ["Pemenang 6", "Temporary"],
+      school: "Temporary school",
+      insignia: witama,
+    },
+	
+	{ // 5
       code: "M009",
       names: ["Pemenang 5", "Kenzo Alvaro Lim"],
       school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
 
-    { // 2
+    { // 4
+      code: "M009",
+      names: ["Pemenang 4", "Kenzo Alvaro Lim"],
+      school: "SMP Witama Nasional Plus",
+      insignia: witama,
+    },
+
+    { // 3
       code: "M024",
-      names: ["Pemenang 4", "Daffa Atha Arkana", "Nurisna Anara"],
+      names: ["Pemenang 3", "Daffa Atha Arkana"],
       school: "MTsN 1 Kota Malang",
       insignia: malang,
     },
 
-    { // 3
+    { // 2
       code: "M031",
-      names: ["Pemenang 3", "Franklin Filbert"],
+      names: ["Pemenang 2", "Franklin Filbert"],
       school: "SMP Witama Nasional",
       insignia: witama,
     },
 
-    { // 4
+    { // 1
       code: "M045",
-      names: ["Pemenang 2", "Neilson Huang", "Grace Christinalie"],
+      names: ["Pemenang 1", "Neilson Huang"],
       school: "SMP Darma Yudha",
       insignia: darmayudha,
     },
-
-    { // 5
-      code: "M053",
-      names: ["Pemenang 1", "Jayden Jurianto"],
-      school: "IPEKA Tomang",
-      insignia: ipeka,
-    },
-
-    { // 5
-      code: "M076",
-      names: ["Gabriella Natalia"],
-      school: "SMP PL Bintang Luat Surakarta",
-      insignia: bintanglaut,
-    },
 	];
 
-	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4],participants[5]];
+	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4],participants[5], participants[6]];
 	let shownWinners = [];
 
 	let shown = _.head(participants);
