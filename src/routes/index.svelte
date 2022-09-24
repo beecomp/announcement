@@ -34,7 +34,7 @@
 
 	{  // 0
 	code: "S040",
-	names: ["JUARA 6", "Cheryll Adeline Saputra, Darren Kenzie"],
+	names: ["PERINGKAT 6", "Cheryll Adeline Saputra, Darren Kenzie"],
 	school: "SMPK 1 BPK PENABUR Bandung",
 	insignia: penabur,
 	},
