@@ -16,73 +16,70 @@
   import malang from "./logo-1malang.png";
   import xaverius from "./logo-xaverius.png";
   import kharismabangsa from "./logo-kharismabangsa.jpg";
+  import skinnyboi from "./skinnyboiv1.png";
   import kristenkanaan from "./logo-kristenkanaan.png";
   import PL from "./logo-pangudiluhur.png";
-  import TB from "./logo-tarunabangsa.png";
+  import TB from "./logo-tarunabangsa.png";`	`
   import ipeka from "./logo-ipeka.png";
 	import bee from "./tightboi.png";
 	
   const participants = [
 
-  {  // 0
-  code: "S017",
-  names: ["Davino Sugianto", "Devin Cahyadi"],
-  school: "SMPK 7 Penabur",
-  insignia: penabur,
-  },
+	{
+		code: "BRILLIANT COMPETITION XIV",
+		names: ["PENGUMUMAN FINAL"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
 
-  {  // 1
-    code: "S025",
-    names: ["Jeremias Shalomoses", "Keiko Maxwell"],
-    school: "SMPK BPK Penabur Singgasana",
-    insignia: penabur,
-  },
+	{  // 0
+	code: "S017",
+	names: ["Davino Sugianto", "Devin Cahyadi"],
+	school: "SMPK 7 Penabur",
+	insignia: penabur,
+	},
 
-  { // 2
-    code: "S027",
-    names: ["Bagasmora Andreo", "Mikhael Faith Benaiah"],
-    school: "SMP Darma Yudha",
-    insignia: darmayudha,
-  },
+	{  // 1
+		code: "S025",
+		names: ["Jeremias Shalomoses", "Keiko Maxwell"],
+		school: "SMPK BPK Penabur Singgasana",
+		insignia: penabur,
+	},
 
-  { // 3
-    code: "S040",
-    names: ["Cheryll Adeline", "Darren Kenzie"],
-    school: "SMPK 1 BPK Penabur Bandung",
-    insignia: penabur,
-  },
+	{ // 2
+		code: "S027",
+		names: ["Bagasmora Andreo", "Mikhael Faith Benaiah"],
+		school: "SMP Darma Yudha",
+		insignia: darmayudha,
+	},
 
-  { // 4
-    code: "S046",
-    names: ["Sulthan Maulana", "Mika Farees Anwar"],
-    school: "SMP Labschool Kebayoran",
-    insignia: kebayoran,
-  },
+	{ // 3
+		code: "S040",
+		names: ["Cheryll Adeline", "Darren Kenzie"],
+		school: "SMPK 1 BPK Penabur Bandung",
+		insignia: penabur,
+	},
 
-  {  // 5
-    code: "S050",
-    names: ["Eliana Gracia Davina", "Daniel Surya Chandra"],
-    school: "SMPK 2 Penabur",
-    insignia: penabur,
-  },
+	{ // 4
+		code: "S046",
+		names: ["Sulthan Maulana", "Mika Farees Anwar"],
+		school: "SMP Labschool Kebayoran",
+		insignia: kebayoran,
+	},
+
+	{  // 5
+		code: "S050",
+		names: ["Eliana Gracia Davina", "Daniel Surya Chandra"],
+		school: "SMPK 2 Penabur",
+		insignia: penabur,
+	},
 ];
 
-	const winners = [participants[4], participants[3], participants[2], participants[1], participants[0]];
+	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4], participants[5]];
 	let shownWinners = [];
 
 	let shown = _.head(participants);
 	let halted = false;
-	onMount(() => {
-		const interval = setInterval(() => {
-			if (halted) return;
-			let next = shown;
-			while (next == shown || shownWinners.includes(next)) {
-				next = _.sample(participants);
-			}
-			shown = next;
-		}, 250);
-	});
-
 	const magic = () => {
 		if (halted && shownWinners.length == winners.length) return;
 		if (halted) return (halted = false);
