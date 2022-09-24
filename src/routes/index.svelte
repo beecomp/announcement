@@ -26,7 +26,7 @@
   const participants = [
 
 	{
-		code: "BRILLIANT COMPETITION XIV",
+		code: "SCIENCE",
 		names: ["PENGUMUMAN FINAL"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
