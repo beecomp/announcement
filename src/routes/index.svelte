@@ -22,43 +22,51 @@
   import raffles from "./logo-raffles.jpg";
   import rajawali from "./logo-rajawali.jpg";
   import bintanglaut from "./logo-plbintang.png";
+  import skinnyboi from "./skinnyboiv1.png";
   import witama from "./logo-witama.jpg";
   import malang from "./logo-1malang.png";
   import xaverius from "./logo-xaverius.jpg";
 	import bee from "./tightboi.png";
 	
   const participants = [
-    { // 0
+	
+	{// 0
+		code: "BRILLIANT COMPETITION XIV",
+		names: ["PENGUMUMAN FINAL"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
+    { // 1
       code: "M009",
-      names: ["Kenzo Alvaro Lim"],
+      names: ["Pemenang 5", "Kenzo Alvaro Lim"],
       school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
 
-    { // 1
+    { // 2
       code: "M024",
-      names: ["Daffa Atha Arkana", "Nurisna Anara"],
+      names: ["Pemenang 4", "Daffa Atha Arkana", "Nurisna Anara"],
       school: "MTsN 1 Kota Malang",
       insignia: malang,
     },
 
-    { // 2
+    { // 3
       code: "M031",
-      names: ["Franklin Filbert"],
+      names: ["Pemenang 3", "Franklin Filbert"],
       school: "SMP Witama Nasional",
       insignia: witama,
     },
 
-    { // 3
+    { // 4
       code: "M045",
-      names: ["Neilson Huang", "Grace Christinalie"],
+      names: ["Pemenang 2", "Neilson Huang", "Grace Christinalie"],
       school: "SMP Darma Yudha",
       insignia: darmayudha,
     },
 
-    { // 4
+    { // 5
       code: "M053",
-      names: ["Jayden Jurianto"],
+      names: ["Pemenang 1", "Jayden Jurianto"],
       school: "IPEKA Tomang",
       insignia: ipeka,
     },
@@ -71,21 +79,11 @@
     },
 	];
 
-	const winners = [participants[4], participants[3], participants[2], participants[1], participants[0]];
+	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4],participants[5]];
 	let shownWinners = [];
 
 	let shown = _.head(participants);
 	let halted = false;
-	onMount(() => {
-		const interval = setInterval(() => {
-			if (halted) return;
-			let next = shown;
-			while (next == shown || shownWinners.includes(next)) {
-				next = _.sample(participants);
-			}
-			shown = next;
-		}, 250);
-	});
 
 	const magic = () => {
 		if (halted && shownWinners.length == winners.length) return;
@@ -118,7 +116,7 @@
 
 					<div class="flex flex-col">
 						{#key shown}
-							<div in:fly={{ delay: 100, y: 50, duration: 250 }}>
+							<div in:fly={{y: 50, duration: 250 }}>
 								<div class="text-white text-5xl font-montserrat break-words">
 									{shown.names[0]}
 								</div>
