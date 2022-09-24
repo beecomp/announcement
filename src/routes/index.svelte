@@ -39,42 +39,42 @@
 
 	{ // 6
       code: "M009",
-      names: ["Pemenang 6", "Temporary"],
+      names: ["PERINGKAT 6", "Temporary"],
       school: "Temporary school",
       insignia: witama,
     },
 	
 	{ // 5
       code: "M009",
-      names: ["Pemenang 5", "Kenzo Alvaro Lim"],
+      names: ["JUARA 5", "Kenzo Alvaro Lim"],
       school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
 
     { // 4
       code: "M009",
-      names: ["Pemenang 4", "Kenzo Alvaro Lim"],
+      names: ["JUARA 4", "Kenzo Alvaro Lim"],
       school: "SMP Witama Nasional Plus",
       insignia: witama,
     },
 
     { // 3
       code: "M024",
-      names: ["Pemenang 3", "Daffa Atha Arkana"],
+      names: ["JUARA 3", "Daffa Atha Arkana"],
       school: "MTsN 1 Kota Malang",
       insignia: malang,
     },
 
     { // 2
       code: "M031",
-      names: ["Pemenang 2", "Franklin Filbert"],
+      names: ["JUARA 2", "Franklin Filbert"],
       school: "SMP Witama Nasional",
       insignia: witama,
     },
 
     { // 1
       code: "M045",
-      names: ["Pemenang 1", "Neilson Huang"],
+      names: ["JUARA 1", "Neilson Huang"],
       school: "SMP Darma Yudha",
       insignia: darmayudha,
     },
