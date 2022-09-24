@@ -31,7 +31,7 @@
 			fill="transparent"
 			text-anchor="middle"
 		>
-			BRILLAINT
+			BRILLIANT
 		</text>
 		<text
 			x="0"
