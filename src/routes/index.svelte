@@ -25,49 +25,91 @@
 	
   const participants = [
 
-	{
+	{ // 0
 		code: "SCIENCE",
 		names: ["PENGUMUMAN FINAL"],
 		school: "BRILLIANT COMPETITION XIV",
 		insignia: skinnyboi,
 	},
 
-	{  // 0
-	code: "S040",
-	names: ["PERINGKAT 6", "Cheryll Adeline Saputra, Darren Kenzie"],
-	school: "SMPK 1 BPK PENABUR Bandung",
-	insignia: penabur,
+	{  // 1
+		code: "BIDANG SCIENCE",
+		names: ["", "PERINGKAT 6"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
 	},
 
-	{  // 1
+	{  // 2
+		code: "S040",
+		names: ["PERINGKAT 6", "Cheryll Adeline Saputra, Darren Kenzie"],
+		school: "SMPK 1 BPK PENABUR Bandung",
+		insignia: penabur,
+	},
+
+	{  // 3
+		code: "BIDANG SCIENCE",
+		names: ["", "JUARA 5"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
+
+	{  // 4
 		code: "S046",
 		names: ["JUARA 5", "Sulthan Maulana Akbar Nasution, Mika Farees Miswar"],
 		school: "SMP Labschool Kebayoran",
 		insignia: kebayoran,
 	},
 
-	{ // 2
+	{  // 5
+		code: "BIDANG SCIENCE",
+		names: ["", "JUARA 4"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
+
+	{ // 6
 		code: "S025",
 		names: ["JUARA 4", "Jeremias Shalomoses Simangunsong, Keiko Maxwell"],
 		school: "SMPK BPK Penabur Singgasana",
 		insignia: penabur,
 	},
 
-	{ // 3
+	{  // 7
+		code: "BIDANG SCIENCE",
+		names: ["", "JUARA 3"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
+
+	{ // 8
 		code: "S017",
 		names: ["JUARA 3", "Davino Sugianto, Devin Cahyadi"],
 		school: "SMPK 7 PENABUR",
 		insignia: penabur,
 	},
 
-	{ // 4
+	{  // 9
+		code: "BIDANG SCIENCE",
+		names: ["", "JUARA 2"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
+
+	{ // 10
 		code: "S050",
 		names: ["JUARA 2", "Elliana Gracia Davina Harwinanto, Daniel Surya Chandra"],
 		school: "SMPK 2 PENABUR",
 		insignia: penabur,
 	},
 
-	{  // 5
+	{  // 11
+		code: "BIDANG SCIENCE",
+		names: ["", "JUARA 1"],
+		school: "BRILLIANT COMPETITION XIV",
+		insignia: skinnyboi,
+	},
+
+	{  // 12
 		code: "S027",
 		names: ["JUARA 1", "Bagasmora Andreo Sibarani, Mikhael Faith Benaiah Liveroy Saragih"],
 		school: "SMP Darma Yudha",
@@ -75,7 +117,8 @@
 	},
 ];
 
-	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4], participants[5], participants[6]];
+	const winners = [participants[0], participants[1], participants[2], participants[3], participants[4], participants[5], participants[6], participants[7], participants[8], 
+					participants[11], participants[12], participants[9], participants[10]];
 	let shownWinners = [];
 
 	let shown = _.head(participants);
