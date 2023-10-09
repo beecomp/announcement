@@ -21,6 +21,7 @@
   import witama from "./logo-witama.png";
   import xaverius from "./logo-xaverius.png";
   import skinnyboi from "./skinnyboiv1.png";
+  import bee2024 from "./bee2024.png";
   import bee from "./tightboi.png";
 	
   const participants = [
@@ -29,14 +30,14 @@
 		code: "SCIENCE",
 		names: ["PENGUMUMAN FINAL"],
 		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
+		insignia: bee2024,
 	},
 
 	{  // 1
 		code: "BIDANG SCIENCE",
 		names: ["", "PERINGKAT 6"],
 		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
+		insignia: bee2024,
 	},
 
 	{  // 2
@@ -50,7 +51,7 @@
 		code: "BIDANG SCIENCE",
 		names: ["", "JUARA 5"],
 		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
+		insignia: bee2024,
 	},
 
 	{  // 4
@@ -64,7 +65,7 @@
 		code: "BIDANG SCIENCE",
 		names: ["", "JUARA 4"],
 		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
+		insignia: bee2024,
 	},
 
 	{ // 6
@@ -78,7 +79,7 @@
 		code: "BIDANG SCIENCE",
 		names: ["", "JUARA 3"],
 		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
+		insignia: bee2024,
 	},
 
 	{ // 8
@@ -92,7 +93,7 @@
 		code: "BIDANG SCIENCE",
 		names: ["", "JUARA 2"],
 		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
+		insignia: bee2024,
 	},
 
 	{ // 10
@@ -106,7 +107,7 @@
 		code: "BIDANG SCIENCE",
 		names: ["", "JUARA 1"],
 		school: "BRILLIANT COMPETITION XIV",
-		insignia: skinnyboi,
+		insignia: bee2024,
 	},
 
 	{  // 12
