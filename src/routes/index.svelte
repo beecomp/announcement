@@ -21,7 +21,7 @@
   import witama from "./logo-witama.png";
   import xaverius from "./logo-xaverius.png";
   import skinnyboi from "./skinnyboiv1.png";
-  import bee2024 from "./bee2024.p	ng";
+  import bee2024 from "./bee2024.png";
   import bee from "./tightboi.png";
 	
   const participants = [
