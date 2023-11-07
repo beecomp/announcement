@@ -5,6 +5,7 @@
 
 	import IndexHero from "$lib/component/IndexHero/index.svelte";
 	
+  import bee2024 from "./bee2024.png";
   import malang from "./logo-1malang.png";
   import athalia from "./logo-athalia.png";
   import darmayudha from "./logo-darmayudha.png";
@@ -21,7 +22,6 @@
   import witama from "./logo-witama.png";
   import xaverius from "./logo-xaverius.png";
   import skinnyboi from "./skinnyboiv1.png";
-  import bee2024 from "./bee2024.png";
   import bee from "./tightboi.png";
 	
   const participants = [
@@ -118,12 +118,38 @@
 	},
 ];
 
+	const schools = [
+		{ // 0
+			code: "",
+			names: ["JUARA 4"],
+			school: "SMP Darma Yudha",
+			insignia: darmayudha,
+		},
+
+		{
+			code: "",
+			names: ["JUARA 5"],
+			school: "SMPK 2 PENABUR",
+			insignia: penabur,
+		},
+	];
+
 	const winners = [participants[0], participants[3] , participants[4], participants[5], participants[6], participants[7], participants[8], participants[9], participants[10], participants[11], 
 	participants[12], participants[1], participants[2]];
 	let shownWinners = [];
 
-	let shown = _.head(participants);
+	let shown = _.head(schools);
 	let halted = false;
+	onMount(() => {
+		const interval = setInterval(() => {
+			if (halted) return;
+			let next = shown;
+			while (next == shown || shownWinners.includes(next)) {
+				next = _.sample(schools);
+			}
+			shown = next;
+		}, 250);
+	});
 	const magic = () => {
 		if (halted && shownWinners.length == winners.length) return;
 		if (halted) return (halted = false);
