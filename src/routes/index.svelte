@@ -175,7 +175,7 @@
 						<div class="flex space-x-16">
 							
 							{#key shown}
-								<div in:fly={{ y: 25, duration: 300 }} class="">
+								<div in:fly={{ y: 25, duration: 200 }} class="">
 									<img
 										class="h-[10rem] min-h-[20rem] w-[20rem] min-w-[20rem] object-contain"
 										src={shown.insignia}
@@ -186,7 +186,7 @@
 
 							<div class="flex flex-col">
 								{#key shown}
-									<div in:fly={{ delay: 150, y: 50, duration: 400 }}>
+									<div in:fly={{ delay: 150, y: 50, duration: 200 }}>
 										<div class="text-black text-3xl font-montserrat break-words">
 											{shown.names[0]}
 										</div>
@@ -202,7 +202,7 @@
 								{/key}
 								<div class="flex-grow" />
 								{#key shown}
-									<div in:fly={{ y: 20, duration: 400 }}>
+									<div in:fly={{ y: 20, duration: 100 }}>
 										<div class="text-black text-3xl font-montserrat break-words">
 											{shown.school}
 										</div>
