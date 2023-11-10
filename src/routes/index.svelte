@@ -73,7 +73,7 @@
 
 	{ // 6
 		code: "S025",
-		names: ["JUARA 4", "Jeremias Shalomoses Simangunsong, Keiko Maxwell"],
+		names: ["JUARA 4", "Jeremias Shalomoses Simangunsong,Keiko Maxwell"],
 		school: "SMPK BPK Penabur Singgasana",
 		insignia: penabur,
 	},
@@ -123,15 +123,15 @@
 
 	const schools = [
 		{ // 0
-			code: "",
-			names: ["JUARA 4"],
+			code: "SMP DARMA YUDHA",
+			names: ["", ""],
 			school: "SMP Darma Yudha",
 			insignia: darmayudha,
 		},
 
 		{
 			code: "",
-			names: ["JUARA 5"],
+			names: ["", ""],
 			school: "SMPK 2 PENABUR",
 			insignia: penabur,
 		},
@@ -165,68 +165,66 @@
 <svelte:head>
 	<title>Announcement · Brilliant Competition</title>
 </svelte:head>
-<style>
-	
-</style>
+
+<div class="relative top-[120px]">
 	<div class="flex flex-col h-full">
 		<IndexHero />
-			<div class="" style="left: {xPos}%; top: {yPos}%">
-				<div class="mt-10 flex-grow">
-					<div class="container mx-auto h-full">
-						<div class="flex flex-col h-full p-12 max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto" style="left: {xPos}%; top: {yPos}%">
-							<div class="flex space-x-16">
-								
+			<div class="mt-10 flex-grow">
+				<div class="container mx-auto h-full">
+					<div class="flex flex-col h-full p-12 max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+						<div class="flex space-x-16">
+							
+							{#key shown}
+								<div in:fly={{ y: 25, duration: 300 }} class="">
+									<img
+										class="h-[10rem] min-h-[20rem] w-[20rem] min-w-[20rem] object-contain"
+										src={shown.insignia}
+										alt="school logo"
+									/>
+								</div>
+							{/key}
+
+							<div class="flex flex-col">
 								{#key shown}
-									<div in:fly={{ y: 25, duration: 250 }} class="">
-										<img
-											class="h-[20rem] min-h-[20rem] w-[20rem] min-w-[20rem] object-contain"
-											src={shown.insignia}
-											alt="school logo"
-										/>
+									<div in:fly={{ delay: 150, y: 50, duration: 400 }}>
+										<div class="text-black text-3xl font-montserrat break-words">
+											{shown.names[0]}
+										</div>
+										{#if shown.names[1]}
+											<div class="mt-2 text-black text-3xl font-montserrat break-words">
+												{shown.names[1]}
+											</div>
+										{/if}
+										<div class="text-black text-3xl italic font-montserrat break-words">
+											{shown.code}
+										</div>
 									</div>
 								{/key}
-
-								<div class="flex flex-col">
-									{#key shown}
-										<div in:fly={{ delay: 100, y: 50, duration: 250 }}>
-											<div class="text-black text-5xl font-montserrat break-words">
-												{shown.names[0]}
-											</div>
-											{#if shown.names[1]}
-												<div class="mt-8 text-black text-5xl font-montserrat break-words">
-													{shown.names[1]}
-												</div>
-											{/if}
-											<div class="text-black text-3xl italic font-montserrat break-words">
-												{shown.code}
-											</div>
+								<div class="flex-grow" />
+								{#key shown}
+									<div in:fly={{ y: 20, duration: 400 }}>
+										<div class="text-black text-3xl font-montserrat break-words">
+											{shown.school}
 										</div>
-									{/key}
-									<div class="flex-grow" />
-									{#key shown}
-										<div in:fly={{ y: 20, duration: 250 }}>
-											<div class="text-black text-4xl font-montserrat break-words">
-												{shown.school}
-											</div>
-										</div>
-									{/key}
-								</div>
+									</div>
+								{/key}
 							</div>
-							<div class="mt-8 w-full flex-grow max-w-xl mx-auto p-4">
-								<ul class="font-barlow-semi text-black text-l space-y-1">
-									{#each _.take(shownWinners, 6) as t}
-										<li class="text-center">
-											{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(" - ")}
-										</li>
-									{/each}
-								</ul>
-							</div>
-							<button
-								on:click={() => magic()}
-								class="block w-full mt-4 h-2 max-w-2xl mx-auto bg-lavender rounded shadow p-4"
-							/>
 						</div>
+						<div class="mt-8 w-full flex-grow max-w-xl mx-auto p-4">
+							<ul class="font-barlow-semi text-black text-l space-y-1">
+								{#each _.take(shownWinners, 6) as t}
+									<li class="text-center">
+										{t.code} &nbsp;&nbsp;|&nbsp;&nbsp; {t.names.join(" - ")}
+									</li>
+								{/each}
+							</ul>
+						</div>
+						<button
+							on:click={() => magic()}
+							class="block w-full mt-4 h-2 max-w-2xl mx-auto bg-lavender rounded shadow p-4"
+						/>
 					</div>
 				</div>
 			</div>
 	</div>
+</div>
